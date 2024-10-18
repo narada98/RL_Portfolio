@@ -1,0 +1,1 @@
+Implement a way to fetch SnP 500 index data with normal symbol data
