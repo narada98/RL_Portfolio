@@ -14,6 +14,7 @@ class MarketEnvironment:
             self,
             data_path,
             holding_period,
+            episode_duration,
             train_test_split,
             symbol_universe,
             feature_set,
@@ -30,19 +31,29 @@ class MarketEnvironment:
         self.features = (np.array([self.data_dict[symbol]['features'] for symbol in symbol_universe])).transpose(1,2,0,3)
         self.returns = (np.array([self.data_dict[symbol]['returns'] for symbol in symbol_universe])).transpose(1,0)
         #shape from (symbols, time_steps, seq_len, features) -> (time_steps ,seq_len, symbols, features)
-        self.split_ = int(self.features.shape[0] * train_test_split)
-        self.t_ = 0
+        # self.split_ = int(self.features.shape[0] * train_test_split)
+        
+        # self.t_ = 0
+        self.episode_duration = episode_duration * self.holding_period
+        self.split_ = int(self.features.shape[0]- 1 - self.episode_duration)
 
     def reset(self, mode, transaction_cost = 1e-7):
 
         if mode == 'train':
-            # self.t_ = random.randint(0, self.split_)
-            self.t_ = 0
-            self.end_t_ = self.split_
+            
+            # self.t_ = 0
+            # self.end_t_ = self.split_
+            
+            #limiting an episode to 1 year
+            self.t_ = random.randint(0, self.split_ - self.episode_duration - 1)
+            self.end_t_ = self.t_ + self.episode_duration
 
         elif mode == 'test':
-            self.t_ = self.split_
-            self.end_t_ = len(self.features)-1
+            # self.t_ = self.split_
+            # self.end_t_ = self.features.shape[0]-1
+
+            self.t_ = random.randint(self.split_, self.features.shape[0]- 1 - self.episode_duration)
+            self.end_t_ = self.t_ + self.episode_duration
 
         self.current_allocations = np.zeros((self.features.shape[-2]))
         self.transaction_cost = transaction_cost
