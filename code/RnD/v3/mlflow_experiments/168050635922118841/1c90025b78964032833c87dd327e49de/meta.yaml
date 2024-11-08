@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/1c90025b78964032833c87dd327e49de/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 1c90025b78964032833c87dd327e49de
+run_name: classy-donkey-815
+run_uuid: 1c90025b78964032833c87dd327e49de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730967315856
+status: 1
+tags: []
+user_id: naradaw

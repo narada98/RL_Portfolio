@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/a5213c54ecda4bc690f24dc628f6a50d/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: a5213c54ecda4bc690f24dc628f6a50d
+run_name: angry-ant-265
+run_uuid: a5213c54ecda4bc690f24dc628f6a50d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730959117123
+status: 1
+tags: []
+user_id: naradaw

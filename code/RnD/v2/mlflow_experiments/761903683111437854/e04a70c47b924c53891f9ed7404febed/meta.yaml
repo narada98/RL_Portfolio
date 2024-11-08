@@ -1,0 +1,16 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v2/mlflow_experiments/761903683111437854/e04a70c47b924c53891f9ed7404febed/artifacts
+deleted_time: 1730873699692
+end_time: 1730872605963
+entry_point_name: ''
+experiment_id: '761903683111437854'
+lifecycle_stage: deleted
+run_id: e04a70c47b924c53891f9ed7404febed
+run_name: v2_training_2024_11_06_11_24
+run_uuid: e04a70c47b924c53891f9ed7404febed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730872477122
+status: 4
+tags: []
+user_id: naradaw

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/79d55333addb4844a64e2962badcf6c0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 79d55333addb4844a64e2962badcf6c0
+run_name: bemused-midge-706
+run_uuid: 79d55333addb4844a64e2962badcf6c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731061455932
+status: 1
+tags: []
+user_id: naradaw

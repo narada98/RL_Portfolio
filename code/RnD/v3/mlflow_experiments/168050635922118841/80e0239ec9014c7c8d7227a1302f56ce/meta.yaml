@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/80e0239ec9014c7c8d7227a1302f56ce/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 80e0239ec9014c7c8d7227a1302f56ce
+run_name: clumsy-shad-961
+run_uuid: 80e0239ec9014c7c8d7227a1302f56ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730960808205
+status: 1
+tags: []
+user_id: naradaw

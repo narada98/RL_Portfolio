@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/9b00921546a54605ae8c3030a37837c8/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 9b00921546a54605ae8c3030a37837c8
+run_name: big-whale-353
+run_uuid: 9b00921546a54605ae8c3030a37837c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731045924313
+status: 1
+tags: []
+user_id: naradaw

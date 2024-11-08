@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/1f17aeee1bd344d3ae8e9d0fd33161c2/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 1f17aeee1bd344d3ae8e9d0fd33161c2
+run_name: nimble-trout-186
+run_uuid: 1f17aeee1bd344d3ae8e9d0fd33161c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731061734820
+status: 1
+tags: []
+user_id: naradaw

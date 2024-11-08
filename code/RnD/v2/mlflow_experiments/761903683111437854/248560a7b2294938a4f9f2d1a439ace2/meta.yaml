@@ -1,0 +1,16 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v2/mlflow_experiments/761903683111437854/248560a7b2294938a4f9f2d1a439ace2/artifacts
+deleted_time: 1730879978415
+end_time: null
+entry_point_name: ''
+experiment_id: '761903683111437854'
+lifecycle_stage: deleted
+run_id: 248560a7b2294938a4f9f2d1a439ace2
+run_name: painted-seal-368
+run_uuid: 248560a7b2294938a4f9f2d1a439ace2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730874022745
+status: 1
+tags: []
+user_id: naradaw

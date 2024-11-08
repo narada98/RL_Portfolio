@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/54b7bd64c04743339a715bb6ee4b315c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 54b7bd64c04743339a715bb6ee4b315c
+run_name: caring-newt-817
+run_uuid: 54b7bd64c04743339a715bb6ee4b315c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730960324899
+status: 1
+tags: []
+user_id: naradaw

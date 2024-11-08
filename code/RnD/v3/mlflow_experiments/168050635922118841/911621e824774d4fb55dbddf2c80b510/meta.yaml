@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/911621e824774d4fb55dbddf2c80b510/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 911621e824774d4fb55dbddf2c80b510
+run_name: kindly-hare-406
+run_uuid: 911621e824774d4fb55dbddf2c80b510
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730967477500
+status: 1
+tags: []
+user_id: naradaw

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/f18a4e7b4e9b45018589017137daa5ad/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: f18a4e7b4e9b45018589017137daa5ad
+run_name: suave-penguin-100
+run_uuid: f18a4e7b4e9b45018589017137daa5ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731061892564
+status: 1
+tags: []
+user_id: naradaw

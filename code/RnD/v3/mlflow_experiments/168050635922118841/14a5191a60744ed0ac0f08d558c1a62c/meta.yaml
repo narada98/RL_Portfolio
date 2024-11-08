@@ -1,0 +1,15 @@
+artifact_uri: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/14a5191a60744ed0ac0f08d558c1a62c/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '168050635922118841'
+lifecycle_stage: active
+run_id: 14a5191a60744ed0ac0f08d558c1a62c
+run_name: brawny-hen-86
+run_uuid: 14a5191a60744ed0ac0f08d558c1a62c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731062658887
+status: 1
+tags: []
+user_id: naradaw
