@@ -136,9 +136,11 @@ class PortfolioConstructor(nn.Module):
             # long_scores = scores - (1e9 * long_mask)
 
             long_mask = torch.BoolTensor([i in long_sqs for i in range(rank.shape[0])]).to(self.device)
-            scores = torch.where(long_mask, scores, torch.full_like(scores, -float('inf')))
-
+            long_scores = torch.where(long_mask, scores, torch.full_like(scores, -float('inf'))).to(self.device)
             long_portfolio = long_scores.softmax(dim = 0)
+
+            # noise = torch.randn_like(long_portfolio) * 0.01  # Small noise factor
+            # long_portfolio = (long_portfolio + noise).softmax(dim=0)
 
             allocations = long_portfolio
             port_symbols_idx = list(long_sqs)

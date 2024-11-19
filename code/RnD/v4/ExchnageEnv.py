@@ -41,7 +41,7 @@ class MarketEnvironment:
         self.episode_duration = episode_duration * self.holding_period
         self.split_ = int(self.features.shape[0]- 1 - (self.episode_duration * 3))
 
-    def reset(self, mode, transaction_cost = 1e-7):
+    def reset(self, mode, test_t_ = None, transaction_cost = 1e-7):
 
         if mode == 'train':
             
@@ -60,14 +60,16 @@ class MarketEnvironment:
             self.end_t_ = self.t_ + self.episode_duration
 
         elif mode == 'test':
-            self.t_ = self.split_
+            if test_t_ is None:
+                self.t_ = self.split_
+            else:
+                self.t_ = self.test_t_
             self.end_t_ = self.t_ + self.episode_duration
 
         self.current_allocations = np.zeros((self.features.shape[-2]))
         self.transaction_cost = transaction_cost
 
     def get_return(self, allocations):
-
         return (torch.tensor(self.returns[self.t_, :]).to(self.device) * allocations).sum()
     
     def get_baseline_return(self):
@@ -75,12 +77,10 @@ class MarketEnvironment:
     
 
     def get_random_state(self):
-
         random_t = random.randrange(len(self.features)-1)
         return torch.from_numpy(self.features[random_t , : , :, :]).to(self.device).to(torch.float32)
 
     def get_state(self):
-        
         if self.is_end():
             return None
         
