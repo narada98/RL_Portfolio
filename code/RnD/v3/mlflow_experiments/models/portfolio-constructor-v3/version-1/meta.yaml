@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1731302268337
+current_stage: None
+description: null
+last_updated_timestamp: 1731302268337
+name: portfolio-constructor-v3
+run_id: 63dd9c2c84f84625a4d5b3b492d53611
+run_link: null
+source: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/63dd9c2c84f84625a4d5b3b492d53611/artifacts/portfolio_constructor_{tid}
+status: READY
+status_message: null
+storage_location: file:///home/naradaw/dev/Charles_Schwab/code/RnD/v3/mlflow_experiments/168050635922118841/63dd9c2c84f84625a4d5b3b492d53611/artifacts/portfolio_constructor_{tid}
+user_id: null
+version: 1

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1731300805752
+current_stage: None
+description: null
+last_updated_timestamp: 1731300805752
+name: portfolio-constructor-v3
+run_id: null
+run_link: null
+source: runs:/17ce97946d7e47c1996f5e06b7853cf0/v3_training_2024_11_11_09_52
+status: READY
+status_message: null
+storage_location: runs:/17ce97946d7e47c1996f5e06b7853cf0/v3_training_2024_11_11_09_52
+user_id: null
+version: 2

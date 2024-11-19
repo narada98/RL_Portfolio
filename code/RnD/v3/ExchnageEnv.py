@@ -24,6 +24,7 @@ class MarketEnvironment:
         self.device = device
         self.holding_period = 20 * holding_period #Days
         self.feature_set = feature_set
+        self.symbol_universe = symbol_universe
         
         with open(data_path, 'rb') as f:
             self.data_dict = pickle.load(f)
@@ -79,6 +80,11 @@ class MarketEnvironment:
         return_price = self.returns[self.t_, :]
 
         return (torch.tensor(self.features[self.t_, :, : , self.feature_set.index('close')]).to(self.device) * torch.tensor(self.returns[self.t_, :]).to(self.device) * allocations).sum()
+    
+    def get_baseline_return(self, allocations):
+
+        symbol_universe_allocations = torch.Tensor(np.repeat(1/len(self.symbol_universe), len(self.symbol_universe))).to(self.device)
+        return (torch.tensor(self.features[self.t_, :, : , self.feature_set.index('close')]).to(self.device) * torch.tensor(self.returns[self.t_, :]).to(self.device) * symbol_universe_allocations).sum()
     
     def get_random_state(self):
 
