@@ -1,0 +1,21 @@
+artifact_path: portfolio_constructor_2024_11_22_12_10
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.9.19
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.4.1+cu121
+mlflow_version: 2.17.2
+model_size_bytes: 1149230
+model_uuid: ce35ed0ed161425290ef16c300167587
+run_id: 436e1c256fab46b8916f064f3d4d6bd6
+utc_time_created: '2024-11-22 06:47:13.856338'

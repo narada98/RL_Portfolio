@@ -151,6 +151,7 @@ class DataFetcher:
         self.baseline_raw_data_ = self.baseline_raw_data_[self.baseline_raw_data_.timestamp.isin(dataset_df_.timestamp.unique())]
 
         dataset_df_['return_'] = dataset_df_.apply(lambda x: ((x['target_']/x['close']) - 1), axis = 1)
+        
         dataset_df_ = dataset_df_.groupby('symbol', as_index=False).apply(lambda x : add_all_ta_features(x, open="open", high="high", low="low", close="close", volume="volume", fillna=True)).reset_index(drop = True)
         self.dataset_df_ = dataset_df_
         self.dataset_seq = self.__create_dataset_seq_(window_size)
